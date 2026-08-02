@@ -1,0 +1,45 @@
+<svg width="250" height="72" viewBox="0 0 250 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Logo Circle -->
+  <circle cx="32" cy="36" r="24" fill="#1976D2"/>
+
+  <!-- Growth Arrow -->
+  <path d="M22 40L30 32L36 38L44 26"
+        stroke="white"
+        stroke-width="3.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <path d="M44 26V34"
+        stroke="white"
+        stroke-width="3.5"
+        stroke-linecap="round"/>
+
+  <path d="M44 26H36"
+        stroke="white"
+        stroke-width="3.5"
+        stroke-linecap="round"/>
+
+  <!-- App Name -->
+  <text
+      x="68"
+      y="33"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="24"
+      font-weight="700"
+      fill="#1976D2">
+    ExpenseFlow
+  </text>
+
+  <!-- Tagline -->
+  <text
+      x="68"
+      y="55"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="13"
+      font-weight="500"
+      fill="#666666">
+    Track • Save • Grow
+  </text>
+
+</svg>
