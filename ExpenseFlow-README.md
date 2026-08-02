@@ -48,7 +48,8 @@ ExpenseFlow
 ├── backend
 ├── package.json
 ├── package-lock.json
-└── README.md
+├── .gitignore
+└── ExpenseFlow-README.md
 ```
 
 ---
