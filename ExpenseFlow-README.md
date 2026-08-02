@@ -1,26 +1,25 @@
-# ExpenseFlow
+# 💰 ExpenseFlow
 
-ExpenseFlow is a modern full-stack expense management application that helps users track income and expenses, organize transactions using categories, and view financial summaries through an interactive dashboard.
+ExpenseFlow is a modern full-stack expense management application built with **React, TypeScript, Node.js, Express, and MongoDB**. It enables users to manage income and expenses, organize transactions using categories, and visualize their financial data through an interactive dashboard.
 
 > **Project Status:** 🚧 Development (Version 1.0)
 
 ---
 
-## Features
+# ✨ Features
 
-- User Registration & Login
-- JWT Authentication
-- Dashboard with Financial Summary
-- Income & Expense Tracking
-- Category Management
-- Reports & Analytics
-- Responsive Material UI Interface
+- 🔐 User Authentication (JWT)
+- 📊 Dashboard Overview
+- 💵 Income & Expense Management
+- 📂 Category Management
+- 📈 Reports & Financial Summary
+- 📱 Responsive Material UI Interface
 
 ---
 
-## Tech Stack
+# 🛠 Tech Stack
 
-### Frontend
+## Frontend
 
 - React
 - TypeScript
@@ -29,7 +28,7 @@ ExpenseFlow is a modern full-stack expense management application that helps use
 - React Router
 - Chart.js
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js
@@ -40,46 +39,86 @@ ExpenseFlow is a modern full-stack expense management application that helps use
 
 ---
 
-## Project Structure
+# 📸 Application Screenshots
 
-```
+## Login
+
+![Login](./screenshots/login.png)
+
+---
+
+## Register
+
+![Register](./screenshots/register.png)
+
+---
+
+## Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## Expenses
+
+![Expenses](./screenshots/expenses.png)
+
+---
+
+## Categories
+
+![Categories](./screenshots/categories.png)
+
+---
+
+## Reports
+
+![Reports](./screenshots/reports.png)
+
+---
+
+# 📁 Project Structure
+
+```text
 ExpenseFlow
-├── frontend
+│
 ├── backend
+├── frontend
+├── screenshots
 ├── package.json
 ├── package-lock.json
-├── .gitignore
-└── ExpenseFlow-README.md
+└── README.md
 ```
 
 ---
 
-## Installation
+# 🚀 Installation
 
-### Clone the repository
+## Clone Repository
 
 ```bash
 git clone git@github.com:akshayachar03/ExpenseFlow.git
-
 cd ExpenseFlow
 ```
 
 ---
 
-### Install dependencies
+## Install Dependencies
+
+### Root
 
 ```bash
 npm install
 ```
 
-Install frontend dependencies
+### Frontend
 
 ```bash
 cd frontend
 npm install
 ```
 
-Install backend dependencies
+### Backend
 
 ```bash
 cd ../backend
@@ -88,16 +127,16 @@ npm install
 
 ---
 
-## Run the Application
+# ▶️ Running the Application
 
-### Start Backend
+## Backend
 
 ```bash
 cd backend
 npm run dev
 ```
 
-Backend runs on:
+Runs on:
 
 ```
 http://localhost:5000
@@ -105,14 +144,14 @@ http://localhost:5000
 
 ---
 
-### Start Frontend
+## Frontend
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Frontend runs on:
+Runs on:
 
 ```
 http://localhost:5173
@@ -120,11 +159,9 @@ http://localhost:5173
 
 ---
 
-## Environment Variables
+# ⚙️ Environment Variables
 
 Create a `.env` file inside the **backend** directory.
-
-Example:
 
 ```env
 PORT=5000
@@ -136,7 +173,7 @@ JWT_SECRET=your_secret_key
 
 ---
 
-## Current Modules
+# 📦 Modules
 
 - Authentication
 - Dashboard
@@ -146,15 +183,7 @@ JWT_SECRET=your_secret_key
 
 ---
 
-## Screenshots
-
-Screenshots will be added after the UI is finalized.
-
----
-
-## Version
-
-Current Version
+# 🗂 Version
 
 ```
 v1.0.0
@@ -162,10 +191,14 @@ v1.0.0
 
 ---
 
-## Author
+# 👨‍💻 Author
 
 **Akshay**
 
 GitHub: https://github.com/akshayachar03
 
 LinkedIn: https://www.linkedin.com/in/akshayachar03/
+
+---
+
+## ⭐ If you found this project useful, consider giving it a star.
