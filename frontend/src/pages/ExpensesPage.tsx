@@ -43,17 +43,6 @@ import TransactionFormDialog from "../components/expenses/TransactionFormDialog"
 
 import DeleteTransactionDialog from "../components/expenses/DeleteTransactionDialog";
 
-const initialForm: CreateExpenseRequest = {
-  title: "",
-  description: "",
-  amount: 0,
-  type: "expense",
-  date: new Date()
-    .toISOString()
-    .substring(0, 10),
-  category: "",
-};
-
 const ExpensesPage = () => {
   const [expenses, setExpenses] =
     useState<Expense[]>([]);
