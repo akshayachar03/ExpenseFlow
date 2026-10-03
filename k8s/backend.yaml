@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: expenseflow
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: backend
+
+  template:
+    metadata:
+      labels:
+        app: backend
+
+    spec:
+      imagePullSecrets:
+        - name: acr-secret
+
+      containers:
+        - name: backend
+          image: expenseflowacr2026.azurecr.io/expenseflow-backend:1.0
+
+          ports:
+            - containerPort: 5000
+
+          envFrom:
+            - configMapRef:
+                name: expenseflow-config
+
+          env:
+            - name: JWT_SECRET
+              value: "expenseflow-kodekloud-secret"
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+  namespace: expenseflow
+
+spec:
+  selector:
+    app: backend
+
+  ports:
+    - port: 5000
+      targetPort: 5000
+
+  type: ClusterIP

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: expenseflow-config
+  namespace: expenseflow
+
+data:
+  MONGODB_URI: "mongodb://mongodb:27017/expenseflow"
+  NODE_ENV: "production"
+  PORT: "5000"
